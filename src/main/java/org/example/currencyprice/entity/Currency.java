@@ -1,28 +1,18 @@
 package org.example.currencyprice.entity;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class Currency {
 
     String symbol;
-    Double markPrice;
-
-    public Currency(String symbol, Double markPrice) {
-        this.symbol = symbol;
-        this.markPrice = markPrice;
-    }
-
-    public Currency(String symbol) {
-        this.symbol = symbol;
-    }
-
-    public Currency(Double markPrice) {
-        this.markPrice = markPrice;
-    }
+    String markPrice;
 
     public String getSymbol() {
         return symbol;
     }
 
-    public Double getMarkPrice() {
+    public String getMarkPrice() {
         return markPrice;
     }
 
@@ -30,7 +20,7 @@ public class Currency {
         this.symbol = symbol;
     }
 
-    public void setMarkPrice(Double markPrice) {
+    public void setMarkPrice(String markPrice) {
         this.markPrice = markPrice;
     }
 }

@@ -1,7 +1,9 @@
 package org.example.currencyprice.service;
 
+import org.example.currencyprice.entity.Currency;
+
 public interface CurrencyService {
 
-    String getCurrencyMarkPrice(String symbol);
+    Currency getCurrencyMarkPrice(String symbol);
 
 }

@@ -1,5 +1,6 @@
 package org.example.currencyprice.controller;
 
+import org.example.currencyprice.entity.Currency;
 import org.example.currencyprice.service.CurrencyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +18,7 @@ public class CurrencyController {
     }
 
     @GetMapping("/{symbol}")
-    public String getCurrencyMarkPrice(@PathVariable String symbol) {
+    public Currency getCurrencyMarkPrice(@PathVariable String symbol) {
         return currencyService.getCurrencyMarkPrice(symbol);
     }
 
